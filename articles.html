@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Articles, tax updates, audit notes, and compliance insights from Hozefa Zenul Ghasia & Associates."
+    />
+    <title>Articles and Updates | Hozefa Zenul Ghasia & Associates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html#top" aria-label="Hozefa Zenul Ghasia & Associates home">
+        <span class="brand-mark">HZG</span>
+        <span class="brand-text">
+          <strong>Hozefa Zenul Ghasia & Associates</strong>
+          <small>Chartered Accountants</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html#services">Services</a>
+        <a href="./index.html#profile">Profile</a>
+        <a href="./index.html#compliance">Compliance</a>
+        <a href="./capital-gains.html">Capital Gains</a>
+        <a href="./articles.html">Articles</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+
+      <a class="header-action" href="tel:+919175777046">Call now</a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Knowledge desk</p>
+        <h1>Articles, updates, and practical notes for clients.</h1>
+        <p class="hero-lede">
+          Use this page to publish tax updates, audit observations, compliance notes,
+          and business advisory articles for readers of your website.
+        </p>
+      </section>
+
+      <section class="services-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured articles</p>
+          <h2>Start with useful explainers and update this page as your library grows.</h2>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <span>Income Tax</span>
+            <h3>Old regime or new regime: what should an individual compare?</h3>
+            <p>Compare actual deductions, exemptions, rebate, special-rate income, and future consistency before choosing a regime.</p>
+            <a href="./index.html#compliance">Read the comparison</a>
+          </article>
+          <article class="article-card">
+            <span>Capital Gains</span>
+            <h3>Capital gains tax: records to collect before return filing</h3>
+            <p>Purchase records, sale statements, broker reports, bank trail, and exemption proofs can prevent filing errors.</p>
+            <a href="./capital-gains.html">Open guide</a>
+          </article>
+          <article class="article-card">
+            <span>Audit</span>
+            <h3>Why internal audit is more than a compliance exercise</h3>
+            <p>Internal audit helps owners identify control gaps, process leakages, operational risk, and reporting weaknesses.</p>
+            <a href="./index.html#profile">View expertise</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="compliance-section">
+        <div class="section-heading">
+          <p class="eyebrow">Publishing workflow</p>
+          <h2>Add a new article on this page.</h2>
+          <p class="section-note">
+            This form saves articles in the browser on this computer and displays them below. For articles to appear publicly for every visitor, the website needs a CMS, database, or a manual update to the hosted files.
+          </p>
+        </div>
+
+        <form class="enquiry-form article-form" id="articleForm">
+          <label>
+            Article title
+            <input name="title" type="text" required />
+          </label>
+          <label>
+            Category
+            <select name="category" required>
+              <option value="">Select category</option>
+              <option>Income Tax</option>
+              <option>GST</option>
+              <option>Internal Audit</option>
+              <option>Capital Gains</option>
+              <option>Companies Act</option>
+              <option>RBI / FEMA</option>
+              <option>PF / ESIC</option>
+            </select>
+          </label>
+          <label>
+            Short summary
+            <textarea name="summary" rows="3" required></textarea>
+          </label>
+          <label>
+            Full article
+            <textarea name="content" rows="8" required></textarea>
+          </label>
+          <button type="submit" class="primary-button">Add article to this page</button>
+          <p class="form-note" id="articleNote" role="status"></p>
+        </form>
+
+        <div class="article-actions">
+          <button type="button" class="secondary-button" id="exportArticles">Export saved articles</button>
+          <button type="button" class="secondary-button danger-button" id="clearArticles">Clear saved articles</button>
+        </div>
+
+        <div class="saved-articles" id="savedArticles" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Hozefa Zenul Ghasia & Associates</strong>
+        <span>Chartered Accountants | Pune, Maharashtra</span>
+      </div>
+      <p>&copy; 2026 Hozefa Zenul Ghasia & Associates. All rights reserved.</p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/919975583475" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">WA</a>
+    <script src="./script.js"></script>
+  </body>
+</html>
